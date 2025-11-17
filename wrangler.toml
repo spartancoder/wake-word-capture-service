@@ -18,5 +18,5 @@ r2_buckets = [
 workers_dev = true
 vars = { WORKER_ENV = "dev" }
 r2_buckets = [
-	{ binding = "WAKEWORD_TRAINING_BUCKET", bucket_name = "assist-wakeword-training-data", preview_bucket_name = "assist-wakeword-training-data-test" },
+	{ binding = "WAKEWORD_TRAINING_BUCKET", bucket_name = "assist-wakewordqtraining-data", preview_bucket_name = "assist-wakeword-training-data-test" },
 ]

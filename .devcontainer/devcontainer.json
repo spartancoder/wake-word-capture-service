@@ -1,29 +1,36 @@
 {
-    "name": "services.home-assistant.io",
-    "image": "mcr.microsoft.com/vscode/devcontainers/typescript-node:20",
-    "context": "..",
-    "remoteEnv": {
-      "PATH":"${containerEnv:PATH}:./node_modules/.bin",
-      "DEVCONTAINER": "true"
-    },
-    "postCreateCommand": "bash -i -c 'nvm install' && yarn install",
-    "appPort": ["8080:8080", "3001:3001"],
-    "extensions": [
-      "dbaeumer.vscode-eslint",
-      "ms-vscode.vscode-typescript-tslint-plugin",
-      "esbenp.prettier-vscode",
-      "bierner.lit-html",
-      "runem.lit-plugin"
-    ],
-    "settings": {
-      "files.eol": "\n",
-      "editor.tabSize": 2,
-      "editor.formatOnPaste": false,
-      "editor.formatOnSave": true,
-      "editor.formatOnType": true,
-      "[typescript]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode"
-      },
-    "files.trimTrailingWhitespace": true
+  "name": "services.home-assistant.io",
+  "image": "mcr.microsoft.com/vscode/devcontainers/typescript-node:20",
+  "remoteEnv": {
+    "PATH": "${containerEnv:PATH}:./node_modules/.bin",
+    "DEVCONTAINER": "true"
+  },
+  "forwardPorts":[8787,20080],
+  // "postCreateCommand": "bash -i -c 'nvm install' && yarn install",
+  "postCreateCommand": "yarn install",
+  "appPort": [
+    "8080:8080",
+    "3001:3001"
+  ],
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "dbaeumer.vscode-eslint",
+        "ms-vscode.vscode-typescript-tslint-plugin",
+        "esbenp.prettier-vscode",
+        "bierner.lit-html",
+        "runem.lit-plugin"
+      ],
+      "settings": {
+        "files.eol": "\n",
+        "editor.tabSize": 2,
+        "editor.formatOnPaste": false,
+        "editor.formatOnSave": true,
+        "editor.formatOnType": true,
+        "[typescript]": {
+          "editor.defaultFormatter": "esbenp.prettier-vscode"
+        },
+        "files.trimTrailingWhitespace": true
+      }
     }
   }
