@@ -1,13 +1,13 @@
 name = "services"
-account_id = "dc9f963dfa4a630ca83eda7ccd8f363d"
+account_id = "a0b35b8929c76ce364f209c5ffce3ddd"
 compatibility_date = "2022-01-23"
 main = "./src/index.ts"
 send_metrics = false
 
 # For production environment, use '-e production'
 [env.production]
-zone_id = "0ba583492080d3db28c103574f1d19cf"
-routes = ["*whoami.home-assistant.io/*", "*services.home-assistant.io/*"]
+zone_id = "a0b35b8929c76ce364f209c5ffce3ddd"
+routes = ["*whoami.nearlyrandombytes.dev/*", "*services.nearlyrandombytes.dev/*"]
 vars = { WORKER_ENV = "production" }
 r2_buckets = [
 	{ binding = "WAKEWORD_TRAINING_BUCKET", bucket_name = "assist-wakeword-training-data", preview_bucket_name = "assist-wakeword-training-data-test" },
