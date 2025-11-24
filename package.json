@@ -29,5 +29,5 @@
     "toucan-js": "^4.1.1",
     "yarn": "^1.22.22"
   },
-  "packageManager": "yarn@4.12.0"
+  "packageManager": "yarn@4.9.1"
 }
