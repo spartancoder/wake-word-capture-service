@@ -5,7 +5,7 @@
     "PATH": "${containerEnv:PATH}:./node_modules/.bin",
     "DEVCONTAINER": "true"
   },
-  "forwardPorts":[8787,20080],
+  "forwardPorts":[8787,20080,8976],
   // "postCreateCommand": "bash -i -c 'nvm install' && yarn install",
   "postCreateCommand": "yarn install",
   "appPort": [
