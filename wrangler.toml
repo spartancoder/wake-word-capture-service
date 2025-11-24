@@ -1,4 +1,4 @@
-name = "services"
+name = "services-production"
 account_id = "a0b35b8929c76ce364f209c5ffce3ddd"
 compatibility_date = "2022-01-23"
 main = "./src/index.ts"
