@@ -26,6 +26,7 @@
     ]
   },
   "dependencies": {
-    "toucan-js": "^4.1.1"
+    "toucan-js": "^4.1.1",
+    "yarn": "^1.22.22"
   }
 }
